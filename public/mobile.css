@@ -2,7 +2,29 @@ html {
     scroll-behavior: smooth;
 }
 
+@media screen and (max-width:1164px) {
+    /* service */
+    .service {
+        top: 10px;
+        position: relative;
+        text-align: center;
+        right: 520px;
+    }
+    section.container {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+}
+
 @media screen and (max-width:768px) {
+    /* Header nav */
+    .logo img {
+        position: relative;
+        top: 10px;
+        left: 10px;
+    }
     /* .row img1*/
     .img1 {
         border-radius: 50%;
@@ -11,15 +33,16 @@ html {
         left: 50px;
         top: 30px;
         padding: 30px;
-        width: 25vh;
-        height: 25vh;
+        width: 20vh;
+        height: 20vh;
         max-width: 100%;
     }
     /* SERVICE */
-    .service-message {
+    .service {
+        top: 10px;
         position: relative;
+        text-align: center;
         right: 520px;
-        top: 100px;
     }
     /* SERVICE Card */
     section.container {
@@ -43,6 +66,10 @@ html {
     .icon {
         position: relative;
         bottom: 15px;
+    }
+    /* skills */
+    .skills-Bx {
+        gap: 170px;
     }
 }
 
@@ -141,6 +168,9 @@ html {
         width: auto;
         bottom: auto;
     }
+    .service h4 {
+        font-size: 30px;
+    }
     .card {
         position: absolute;
         padding: 5px;
@@ -164,29 +194,31 @@ html {
     .em {
         position: absolute;
         text-align: center;
-        font-size: 40px;
+        font-size: 20px;
         font-weight: 900;
         color: rgb(248, 242, 242);
         width: auto;
     }
-    .phillosophy {
-        position: absolute;
-        left: 5%;
-    }
+    /* Footer */
     #footer {
         background-image: url(img/connect01.jpg);
         border-radius: 10px;
+        background-position: center;
+        background-size: auto;
         background-repeat: no-repeat;
-        background-attachment: scroll, fixed;
+        background-attachment: fixed;
         width: auto;
-        height: 30vh;
+        height: auto;
         margin: 100px auto 100px auto;
+    }
+    .footer-intro h2 {
+        font-size: 1em;
     }
     .icon-twitter,
     .icon-github,
     .icon-linked {
         font-size: 40px;
-        color: black;
+        color: rgb(62, 194, 165);
     }
     .footer-intro h2 {
         font-size: 1em;
@@ -220,40 +252,12 @@ html {
     /* Service--! */
     .service {
         position: relative;
-        left: 550px;
+        left: 530px;
         bottom: 100px;
     }
-    .skills-intro {
-        font-size: 10px;
-        font-weight: 900;
-    }
-    .icon-skills {
-        top: 90px;
-        position: relative;
-        text-align: center;
-    }
-    .icon-intro {
-        font-size: 50px;
-    }
-    .icon-intro h5 {
-        color: whitesmoke;
-        font-size: 15px;
-    }
-    .html {
-        position: relative;
-        bottom: 30px;
-    }
-    .css {
-        position: relative;
-        top: 0px;
-    }
-    .js {
-        position: relative;
-        top: 9px;
-    }
-    .git {
-        position: relative;
-        top: 10px;
+    /* Skills*/
+    .skills-Bx {
+        gap: 100px;
     }
 }
 

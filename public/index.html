@@ -7,8 +7,8 @@
     <title>OsDeV.</title>
     <link rel="stylesheet" type="text/css" href="desktop.css">
     <link rel="stylesheet" type="text/css" href="mobile.css">
-
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
 
 
 </head>
@@ -21,8 +21,6 @@
             <a href="#" class="logo"><img style="width: 10vh; border: 50%;" src="img/logo.jpeg" alt="picture of OLUWASEUN Olubiyi">
             </a>
             <ul>
-
-
                 <li><a href="#about">About</a></li>
                 <li><a href="#service">Service</a></li>
                 <li><a href="#project">Projects</a></li>
@@ -32,7 +30,7 @@
 
     </header>
     <!--Parralax Images-->
-    <section class="parralax">
+    <section class="parralax" href="#home">
         <img src="img/1.png" data-speed="-5" class="layer">
         <img src="img/2.png" data-speed="5" class="layer">
         <img src="img/3.png" data-speed="2" class="layer">
@@ -50,6 +48,11 @@
             <img src="img/me2.jpeg" class="img1 layer" data-speed="3">
             <h2 class="layer" data-speed="2" alt="Oluwseun OLubiyi"> Hello 😁 <span> I'm Olubiyi OluwaSeun.</span></h2>
         </div>
+
+        <a class="scroll">
+            <h4>👇🏾</h4>
+            <h6>scroll</h6>
+        </a>
 
     </section>
 
@@ -146,43 +149,42 @@
 
     <hr>
 
-    <div class="skills">
+    <section class="skills">
         <div class="skills-intro">
-            <h1>skills.</h1>
+            <h3> Skills</h3>
         </div>
-        <div class="sills-container">
-            <div class="icon-skills">
-                <div class="icon-intro">
-                    <div class="html">
-                        <h5>Html5</h5>
-                        <a class="skills-html">
-                            <i class="fab fa-html5"></i>
-                        </a>
-                    </div>
-                    <div class="css">
-                        <h5>Css</h5>
-                        <a class="skills-css3">
-                            <i class="fab fa-css3-alt"></i>
-                        </a>
-                    </div>
-                    <div class="js">
-                        <h5>JavaScript</h5>
-                        <a class="skills-js">
-                            <i class="fab fa-js-square"></i>
-                        </a>
-                    </div>
-                    <div class="git">
-                        <h5>Git</h5>
-                        <a class="skills-git">
-                            <i class="fab fa-git-square"></i>
-                        </a>
-                    </div>
-
-                </div>
+        <div class="skills-Bx">
+            <div class="skills-icon">
+                <h3> HTML5</h3>
+                <a class="skills-html">
+                    <i class="fab fa-html5"></i>
+                </a>
             </div>
 
+            <div class="skills-icon">
+                <h3> CSS3</h3>
+                <a class="skills-css3">
+                    <i class="fab fa-css3-alt"></i>
+                </a>
+            </div>
+
+            <div class="skills-icon">
+                <h3>JavaScript</h3>
+                <a class="skills-jsl">
+                    <i class="fab fa-js-square"></i>
+                </a>
+            </div>
+
+            <div class="skills-icon">
+                <h3> Git</h3>
+                <a class="skills-git">
+                    <i class="fab fa-git-square"></i>
+                </a>
+            </div>
         </div>
-    </div>
+
+    </section>
+
     <!-- Fotter Section--! -->
     <footer id="footer">
         <div class="footer-intro">
@@ -199,16 +201,19 @@
                     <i class="fab fa-twitter-square"></i>
                 </a>
 
-                <a class="icon-github" href="https://twitter.com/oluwaseeun">
+                <a class="icon-github" href="https://github.com/Oluwa-Seun">
                     <i class="fab fa-github-square"></i>
                 </a>
 
                 <a class="icon-linked" href="https://twitter.com/oluwaseeun">
                     <i class="fab fa-linkedin"></i>
                 </a>
+
             </div>
+
         </div>
     </footer>
+
 
 
     <div class="enjoy">
@@ -217,18 +222,22 @@
         </h4>
     </div>
 
+    <a class="scroll-top" id="home">
+        <h4>👆🏾</h4>
+    </a>
+
     <div class="foot">
         <h4 class="foot-name">
             Developed with love by OsDeV&COPY;<span id="copyright"></span> ✊🏿#ENDSARS
         </h4>
+
     </div>
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript">
-        // AOS (animate on scroll)
-
-
         // parallax script onmouse move scroll image Y and X--! 
         window.addEventListener("scroll", function() {
             var header = document.querySelector("header");
@@ -252,16 +261,17 @@
             var d = new Date();
             var weekday = new Array(7);
             weekday[0] = "After Church,CHOP!!";
-            weekday[1] = "Make Money Monday! 😎";
-            weekday[2] = "OsDev is +1";
+            weekday[1] = "have a wonderful day today";
+            weekday[2] = "What really happen on teusday?🧐";
             weekday[3] = "WCW / MCW ?";
-            weekday[4] = "throwback thursday 👍🏾 OR 👎🏾?";
+            weekday[4] = "thursdays are for throwbacks!";
             weekday[5] = "TGIF! catch me OutSide 🤪";
             weekday[6] = "saturdays are for Weddings,party jollof and relaxing!";
             var n = weekday[d.getDay()];
             document.getElementById("weekday").innerHTML = n;
         });
 
+        // the script appends a new year every year 
         document.getElementById("copyright").appendChild(document.createTextNode(new Date().getFullYear()));
     </script>
 </body>

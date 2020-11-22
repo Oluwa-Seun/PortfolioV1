@@ -42,7 +42,7 @@
     
     .logo img {
         position: absolute;
-        right: 800px;
+        left: 12px;
         border-radius: 50%;
         padding: 10px auto;
     }
@@ -90,7 +90,7 @@
         top: 30px;
         padding: 30px;
         width: 30vh;
-        height: 35vh;
+        height: 30vh;
         max-width: 100%;
     }
     
@@ -131,6 +131,18 @@
         text-shadow: 3px 3px rgb(235, 194, 11);
         display: inline-block;
         padding-left: 20%;
+    }
+    /* Scroll emoji */
+    
+    .scroll {
+        position: absolute;
+        bottom: 70px;
+        font-size: 35px;
+    }
+    
+    .scroll h6 {
+        color: whitesmoke;
+        text-shadow: 3px 3px 3px black;
     }
     /* About section */
     
@@ -398,91 +410,53 @@
         will-change: transform;
         transition: .3s transform cubic-bezier(.25, .46, .45, 1);
     }
-    /* skills */
+    /* skills! */
+    
+    .skills {
+        background: url(img/skills.JPG);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
     
     .skills-intro {
-        text-transform: uppercase;
-        font-size: 30px;
-        font-weight: 900;
-        color: whitesmoke;
-        padding: 50px;
-        position: relative;
+        position: absolute;
         text-align: center;
-        top: 25px;
+        width: auto;
+        top: 50px;
     }
     
-    .icon-skills {
-        top: 90px;
-        position: relative;
-        text-align: center;
-    }
-    
-    .icon-intro {
-        font-size: 100px;
-    }
-    
-    .icon-intro h5 {
-        color: whitesmoke;
-        font-size: 25px;
-    }
-    
-    .html {
-        position: relative;
-        bottom: 35px;
-    }
-    
-    .css {
-        position: relative;
-        top: 40px;
-    }
-    
-    .js {
-        position: relative;
-        top: 120px;
-    }
-    
-    .git {
-        position: relative;
-        top: 200px;
-    }
-    
-    .skills-html {
-        color: orangered;
-    }
-    
-    .skills-css3 {
-        color: rgb(41, 100, 230);
-    }
-    
-    .skills-js {
-        color: rgb(194, 169, 28);
-    }
-    
-    .skills-git {
-        color: white;
-    }
-    
-    .icon-twitter,
-    .icon-github,
-    .icon-linked {
+    .skills-intro h3 {
         font-size: 50px;
-        color: black;
+        color: whitesmoke;
+        text-shadow: 3px 3px 3px black;
     }
     
-    .icon-twitter:hover {
-        color: whitesmoke;
+    .skills-Bx {
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        grid-template-rows: 100px 100px;
+        gap: 200px;
     }
     
-    .icon-github:hover {
-        color: whitesmoke;
+    .skills-icon a {
+        font-size: 5em;
     }
     
-    .icon-linked :hover {
+    .skills-icon {
+        position: relative;
+        top: 60px;
+    }
+    
+    .skills-icon h3 {
         color: whitesmoke;
+        text-shadow: 3px 3px 3px black;
     }
     /* fOOTER */
     
     #footer {
+        bottom: 50px;
         background: url(img/connect.jpeg);
         border-radius: 10px;
         background-repeat: no-repeat;
@@ -519,6 +493,19 @@
         color: whitesmoke;
         font-size: 25px;
     }
+    
+    .icon-twitter,
+    .icon-github,
+    .icon-linked {
+        font-size: 50px;
+        color: black;
+    }
+    
+    .icon-twitter:hover,
+    .icon-github:hover,
+    .icon-linked:hover {
+        color: whitesmoke;
+    }
     /*Enjoy*/
     
     .enjoy {
@@ -541,4 +528,12 @@
     .foot-name {
         font-size: 13px;
         color: rgb(124, 168, 162);
+    }
+    /* scroll top emoji */
+    
+    .scroll-top {
+        position: absolute;
+        right: 30px;
+        bottom: 10px;
+        font-size: 40px;
     }
