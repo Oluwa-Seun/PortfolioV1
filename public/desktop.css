@@ -14,7 +14,7 @@
     
     body {
         min-height: 100vh;
-        background-color: #051118;
+        background-color: #688392;
         transform-style: perspective(900px);
         transform-style: preserve-3d;
     }
@@ -213,6 +213,14 @@
         box-shadow: 1px 20px 30px rgb(0, 0, 0);
     }
     /*service*/
+    
+    #service {
+        background: url(img/service.GIF);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
     
     .service {
         position: relative;
@@ -534,6 +542,6 @@
     .scroll-top {
         position: absolute;
         right: 30px;
-        bottom: 10px;
+        bottom: 25px;
         font-size: 40px;
     }
