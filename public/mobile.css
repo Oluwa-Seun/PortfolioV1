@@ -162,6 +162,13 @@ html {
         width: auto;
     }
     /* SERVICE!! */
+    #service {
+        background: url(img/service.GIF);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
     .service {
         position: relative;
         text-align: center;
@@ -223,6 +230,7 @@ html {
     .footer-intro h2 {
         font-size: 1em;
     }
+    .scroll-top {}
 }
 
 @media screen and (max-width:425px) {
@@ -298,6 +306,14 @@ html {
     }
     .contentBx {
         font-size: 10px;
+    }
+    .service-message {
+        position: absolute;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 900;
+        color: rgb(248, 242, 242);
+        left: 50px;
     }
 }
 

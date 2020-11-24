@@ -14,7 +14,9 @@
     
     body {
         min-height: 100vh;
-        background-color: #688392;
+        background: url(img/foot.JPG);
+        background-size: contain;
+        background-position: center;
         transform-style: perspective(900px);
         transform-style: preserve-3d;
     }
@@ -216,10 +218,10 @@
     
     #service {
         background: url(img/service.GIF);
-        background-size: cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;
         background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
     }
     
     .service {
